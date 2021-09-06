@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Marnix Elling</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/variables.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/mouse.css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Josefin+Sans:wght@500&family=Urbanist:wght@100&family=Zilla+Slab&display=swap" rel="stylesheet">
+</head>
+<body id="content" onscroll="videoSpeed()">
+  <video autoplay muted loop id="background">
+    <source src="media/background.mp4" type="video/mp4">
+  </video>
+  <header>
+    <ul class="nav-font">
+      <li>Intro</li>
+      <li>Over mij</li>
+      <li id="title" class="title-font">Marnix Elling</li>
+      <li>Hymne</li>
+      <li>Contact</li>
+    </ul>
+  </header>
+  <div class="front">
+    <h1 class="button-font">Intro.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="transition-gradient">
+    <div class="mouse_scroll">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <div>
+        <span class="m_scroll_arrows unu"></span>
+        <span class="m_scroll_arrows doi"></span>
+        <span class="m_scroll_arrows trei"></span>
+      </div>
+  </div>
+  </div>
+  <div class="container">
+
+  </div>
+  <footer class="nav-font">
+    Copyright © 2021 Eights Inc. All Rights Reserved
+  </footer>
+</body>
+<script>
+  function videoSpeed() {
+    document.getElementById("content")
+    var vid = document.getElementById("background")
+    var test = 1+Math.ceil(window.scrollY/100)/10*2
+    vid.playbackRate = test
+  }
+</script>
+</html>

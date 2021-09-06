@@ -1,0 +1,19 @@
+.title-font {
+  font-family: 'Lobster', cursive;
+  background: -webkit-linear-gradient(#5582A8, #F5F9FC, #6D305A, #bd5e9f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #ffffff;
+}
+.nav-font {
+  font-family: 'Josefin Sans', sans-serif;
+}
+.button-font {
+  font-family: 'Urbanist', sans-serif;
+  color: #EB3655;
+  text-shadow: 0 0 10px #EB3655;
+}
+.default-font {
+  font-family: 'Zilla Slab', serif;
+}
